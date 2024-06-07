@@ -54,6 +54,7 @@ nav {
 .link a:hover {
   color: var(--text-dark);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-logo {
@@ -64,9 +65,7 @@ nav {
 .nav-logo {
   margin: 2px;
   max-width: 120px;
-  background: var(--white);
 }
-
 
 .nav-logo h4{
   font-size: 1.5rem;
@@ -84,3 +83,29 @@ nav {
 
 
 
+/*---Header---*/
+
+.header {
+  margin-bottom: 10rem;
+}
+
+.header-container {
+  min-height: 600px;
+  position: relative;
+}
+
+.header-content {
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+  width: 50%;
+  opacity: 76%;
+  left: 25%;
+}
+
+.header-content h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: var(--header-font);
+}
