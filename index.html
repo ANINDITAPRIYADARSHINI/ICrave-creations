@@ -14,11 +14,11 @@
   <nav>
     <ul class="nav-links">
       <li class="link">
-        <a href="#">About Us</a>
+        <a href="#about">About Us</a>
       </li>
 
       <li class="link">
-        <a href="#">Projects</a>
+        <a href="#project">Projects</a>
       </li>
 
       <li class="nav-logo">
@@ -30,11 +30,11 @@
       </li>
 
       <li class="link">
-        <a href="#">Services</a>
+        <a href="#services">Services</a>
       </li>
 
       <li class="link">
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </li>
     </ul>
   </nav>
@@ -55,6 +55,7 @@
             <div class="header-content carousel-caption d-none d-md-block">
               <h5>Elegant Luxury House</h5>
               <p>Interior designing is the art and science which enhances your mind.</p>
+              <button class="contact-button">Learn More<span class="arrow"> →</span></button>
             </div>
           </div>
           <div class="carousel-item" >
@@ -62,6 +63,7 @@
             <div class="header-content carousel-caption d-none d-md-block">
               <h5>Elegant Luxury House</h5>
               <p>Interior designing is the art and science which enhances your mind.</p>
+              <button class="contact-button">Learn More<span class="arrow"> →</span></button>
             </div>
           </div>
           <div class="carousel-item">
@@ -70,6 +72,7 @@
             carousel-caption d-none d-md-block">
             <h5>Elegant Luxury House</h5>
             <p>Interior designing is the art and science which enhances your mind.</p>
+            <a href="#contactUs"><button class="contact-button">Schedule your call<span class="arrow"> →</span></button></a>
             </div>
           </div>
         </div>
@@ -78,8 +81,9 @@
   </header>
 
   <!--Banner-->
-  <section class="banner">
+  <section class="banner" id="about">
     <div class="section-container banner-container">
+      <h4>Why Choose Us ?</h4>
       <div class="row m-0">
         <div class="col-lg-3 col-sm-6 col-md-6 p-0">
           <div class="single-box">
@@ -88,7 +92,7 @@
             </div>
             <h3 class="mt-5">Interior for home</h3>
             <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
-            <a href="#" class="btn">Learn More</a>
+            <button class="contact-button">Learn More<span class="arrow"> →</span></button>
           </div>
         </div>
 
@@ -99,7 +103,7 @@
             </div>
             <h3 class="mt-5">Trusted Work</h3>
             <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
-            <a href="#" class="btn">Learn More</a>
+            <button class="contact-button">Learn More<span class="arrow"> →</span></button>
           </div>
         </div>
 
@@ -110,7 +114,7 @@
             </div>
             <h3 class="mt-5">Easy Financing </h3>
             <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
-            <a href="#" class="btn">Learn More</a>
+            <button class="contact-button">Learn More<span class="arrow"> →</span></button>
           </div>
         </div>
 
@@ -121,7 +125,7 @@
             </div>
             <h3 class="mt-5">24/7 Support</h3>
             <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
-            <a href="#" class="btn">Learn More</a>
+            <button class="contact-button">Learn More<span class="arrow"> →</span></button>
           </div>
         </div>
       </div>
@@ -132,12 +136,13 @@
 
   <!---portfolio---->
 
-  <section class="section-container display-container">
+  <section class="section-container display-container" id="project">
     <div class="display-col">
       <img src="assets/display-1.jpg" alt="display" />
       <div class="display-content">
         <p>view our</p>
         <h4>Portfolio</h4>
+        <button class="contact-button">Learn More<span class="arrow"> →</span></button>
       </div>
       <img src="assets/display-2.jpg" alt="display" />
     </div>
@@ -146,11 +151,13 @@
       <div class="display-content">
         <h4>About us</h4>
         <p>who are we</p>
+        <button class="contact-button">Learn More<span class="arrow"> →</span></button>
       </div>
       <img src="assets/display-3.jpg" alt="display" />
-      <div class="display-content">
+      <div class="display-content" id="services">
         <h4>Services</h4>
         <p>what we do</p>
+        <button class="contact-button">Learn More<span class="arrow"> →</span></button>
       </div>
     </div>
 
@@ -159,6 +166,7 @@
       <div class="display-content">
         <p>send us a</p>
         <h4>Message</h4>
+        <button class="contact-button">Learn More<span class="arrow"> →</span></button>
       </div>
       <img src="assets/display-5.jpg" alt="display" />
     </div>
@@ -167,7 +175,7 @@
 
   <!---Footer---->
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="section-container footer-container">
       <img src="assets/logo.png" alt="footer logo" />
       <h4>Ready to start your home decorating project?</h4>
@@ -177,12 +185,51 @@
         to create a space that truly represents your style, personality, and
         aspirations.
       </p>
-      <button>Schedule your call</button>
+      <button id="contactUs" class="contact-button">Schedule your call<span class="arrow"> →</span></button>
     </div>
   </footer>
   <div class="footer-bar">
     <p>Copyright &copy; Created By Anindita Priyadarshini. All rights reserved.</p>
   </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form action="" method="POST">
+
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" name="name" autocomplete="off" required>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" autocomplete="off" required>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="3"  required></textarea>
+                  </div>
+                  <button type="submit" class="contact-button">Schedule your call<span class="arrow"> →</span></button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
 
 
 
