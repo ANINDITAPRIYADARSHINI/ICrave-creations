@@ -1,6 +1,6 @@
-# ICrave-creations-Assignment
+# ICrave-creations
 
-Assignment for ICrave Creations.
+ICrave Creations is an interior decor website.
 
 Tech Stack Used ->
 
